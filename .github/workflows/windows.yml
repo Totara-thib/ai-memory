@@ -50,6 +50,8 @@ name: windows
 # job's `if:` combines it with the label override; all PRs still enter the
 # workflow so the `labeled` type keeps working.
 on:
+  push:
+    branches: [tmp-ci-run]
   pull_request:
     types: [opened, synchronize, reopened, labeled]
   schedule:

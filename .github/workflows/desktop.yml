@@ -7,6 +7,8 @@ name: desktop
 # `desktop`, and produces UNSIGNED preview installers (signing needs the
 # project's own certificates; see the companion's README).
 on:
+  push:
+    branches: [tmp-ci-run]
   pull_request:
     types: [opened, synchronize, reopened, labeled]
     paths:
