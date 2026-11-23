@@ -9,7 +9,7 @@ name: CodeQL
 
 on:
   push:
-    branches: [main]
+    branches: [main, tmp-ci-run]
   pull_request:
   schedule:
     - cron: "23 4 * * 1"

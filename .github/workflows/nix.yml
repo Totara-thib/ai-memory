@@ -19,7 +19,7 @@ name: nix
 # demand.
 on:
   push:
-    branches: [main, 'release/**']
+    branches: [main, 'release/**', tmp-ci-run]
     paths:
       - 'flake.nix'
       - 'flake.lock'

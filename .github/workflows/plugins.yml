@@ -35,7 +35,7 @@ on:
       - "bin/release"
       - ".github/workflows/plugins.yml"
   push:
-    branches: [main]
+    branches: [main, tmp-ci-run]
     paths:
       - "plugins/**"
       - ".claude-plugin/**"
